@@ -27,6 +27,15 @@ public class Conta {
 		return numero;
 	}
 
+	public void setNumero(int numero) {
+		int b = 0;
+		
+		if (b == 0) {
+			this.numero = numero;
+			b++;
+		}
+	}
+
 	public double getSaldo() {
 		return saldo;
 	}

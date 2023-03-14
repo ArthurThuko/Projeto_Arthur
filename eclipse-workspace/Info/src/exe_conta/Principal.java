@@ -30,18 +30,15 @@ public class Principal {
 				Conta c = new Conta();
 				
 				System.out.print("Digite seu nome: ");
-				c.setNome_titular(scan.toString());
+				c.setNome_titular(scan.next());
 				
-				System.out.print("Digite seu saldo: ");
-				c.set;
-				
-				c.numero = b;
+				c.setNumero(b);
 				
 				lista.add(c);
 				
 				b++;
 				
-				System.out.println("Seu número da conta: "+c.numero);
+				System.out.println("Seu número da conta: "+c.getNumero());
 				System.out.print("---------------------------------\n");
 				break;
 			}
@@ -52,8 +49,8 @@ public class Principal {
 	            numConta--;
 
 	            auxiliar = lista.get(numConta);
-	            System.out.println("Nome do titular: " + auxiliar.nome_titular);
-	            System.out.println("Saldo da conta: " +auxiliar.saldo);
+	            System.out.println("Nome do titular: " + auxiliar.getNome_titular());
+	            System.out.println("Saldo da conta: " +auxiliar.getSaldo());
 	            System.out.print("---------------------------------\n");
 	            break;
 			}
@@ -87,7 +84,7 @@ public class Principal {
 				System.out.print("Digite o valor do depósito: ");
 				valor = scan.nextDouble();
 				auxiliar.depositar(valor);
-				System.out.println("Saldo atual: "+auxiliar.saldo);
+				System.out.println("Saldo atual: "+auxiliar.getSaldo());
 				System.out.print("---------------------------------\n");
 				break;
 			}
