@@ -30,10 +30,10 @@ public class Principal {
 				Conta c = new Conta();
 				
 				System.out.print("Digite seu nome: ");
-				c.nome_titular = scan.next();
+				c.setNome_titular(scan.toString());
 				
 				System.out.print("Digite seu saldo: ");
-				c.saldo = scan.nextDouble();
+				c.set;
 				
 				c.numero = b;
 				
